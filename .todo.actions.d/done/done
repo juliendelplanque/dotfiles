@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+function usage {
+  echo " Mark a task as done. Alias to the do command."
+  exit
+}
+
+
+# Get the action that was required by the user.
+action="$1"
+shift
+
+# If the action required is usage, show usage of this add-on and exit.
+[ "$action" = "usage" ] && usage
+
+# Invoke do, "done" is just an alias to "do".
+$TODO_SH do "$@"
