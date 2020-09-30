@@ -22,3 +22,6 @@ alias vscode="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 
 # todo.sh
 alias todo="todo.sh -t"
+
+# open
+alias open="xdg-open"
